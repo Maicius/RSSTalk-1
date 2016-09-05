@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1215</width>
+    <height>806</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QVBoxLayout" name="leftVLayout" stretch="7,3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QTreeWidget" name="treeWidget">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>订阅内容</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="leftBottomVLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QToolButton" name="IRCToolBtn">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>宋体</family>
+              <pointsize>10</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+              <underline>false</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>转到IRC</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="webToolBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>宋体</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>转到网页</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="releaseToolBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>宋体</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>我要发布</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="shareToolBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>宋体</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>分享到</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="feedbackToolBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>宋体</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>我要反馈</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>搜索</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QToolBox" name="toolBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <underline>true</underline>
+           </font>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page1">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>260</width>
+             <height>692</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string/>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QVBoxLayout" name="RightVLayout" stretch="0,1">
+        <item>
+         <layout class="QHBoxLayout" name="rightUpHLayout" stretch="2,3,0,0,0,0">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>118</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="webEditLine">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maxLength">
+             <number>32782</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="aheadToolBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>&gt;&gt;</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <selectedon>:/ico/image/forward (2) - 副本.png</selectedon>
+             </iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="backToolBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>&lt;&lt;</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <selectedon>:/ico/image/forward (2).png</selectedon>
+             </iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="refreshToolBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>&lt;&lt;</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <selectedon>:/ico/image/rotate90.png</selectedon>
+             </iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="newTabToolBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <selectedon>:/ico/image/create_new page (2).png</selectedon>
+             </iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWebEngineView" name="webView">
+           <attribute name="title">
+            <string>Tab 1</string>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1215</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file_menu">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <widget class="QMenu" name="importOrExport_2">
+     <property name="title">
+      <string>导入/导出</string>
+     </property>
+     <addaction name="importFileAction"/>
+     <addaction name="exportFileAction"/>
+    </widget>
+    <addaction name="newSubscriptionAcion"/>
+    <addaction name="newFolderAction"/>
+    <addaction name="deleteFolderAction"/>
+    <addaction name="deleteSubAction"/>
+    <addaction name="deleteToolBoxAction"/>
+    <addaction name="separator"/>
+    <addaction name="importOrExport_2"/>
+    <addaction name="separator"/>
+    <addaction name="manageCacheAction"/>
+    <addaction name="separator"/>
+    <addaction name="exitAction"/>
+   </widget>
+   <widget class="QMenu" name="edit_menu">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <addaction name="markAllReadAction"/>
+    <addaction name="renameAction"/>
+    <addaction name="separator"/>
+    <addaction name="copyAction"/>
+    <addaction name="pasteAction"/>
+    <addaction name="cutAction"/>
+    <addaction name="zoomInAction"/>
+    <addaction name="zoomOutAction"/>
+    <addaction name="separator"/>
+    <addaction name="undoAction"/>
+    <addaction name="doAction"/>
+   </widget>
+   <widget class="QMenu" name="view_menu">
+    <property name="title">
+     <string>查看(&amp;V)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="browse_menu">
+    <property name="title">
+     <string>浏览(&amp;B)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="favorite_menu">
+    <property name="title">
+     <string>收藏(&amp;A)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="tool_menu">
+    <property name="title">
+     <string>工具(&amp;T)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="help_menu">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+   </widget>
+   <addaction name="file_menu"/>
+   <addaction name="edit_menu"/>
+   <addaction name="view_menu"/>
+   <addaction name="browse_menu"/>
+   <addaction name="favorite_menu"/>
+   <addaction name="tool_menu"/>
+   <addaction name="help_menu"/>
+  </widget>
+  <action name="newSubscriptionAcion">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/RSS.png</normaloff>:/ico/image/RSS.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建推送</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="newFolderAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/open.png</normaloff>:/ico/image/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建文件夹</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
+   </property>
+  </action>
+  <action name="manageCacheAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/ManageCache (1).png</normaloff>:/ico/image/ManageCache (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>管理缓存</string>
+   </property>
+  </action>
+  <action name="exitAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/sign_out (1).png</normaloff>:/ico/image/sign_out (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="markAllReadAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/mark_read (2).png</normaloff>:/ico/image/mark_read (2).png</iconset>
+   </property>
+   <property name="text">
+    <string>标记所有文章为已读</string>
+   </property>
+  </action>
+  <action name="importFileAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/in (1).png</normaloff>:/ico/image/in (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>从本地导入</string>
+   </property>
+  </action>
+  <action name="exportFileAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/sing_out (2).png</normaloff>:/ico/image/sing_out (2).png</iconset>
+   </property>
+   <property name="text">
+    <string>导出到本地</string>
+   </property>
+  </action>
+  <action name="copyAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/copy.png</normaloff>:/ico/image/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制</string>
+   </property>
+  </action>
+  <action name="pasteAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/paste.png</normaloff>:/ico/image/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+  </action>
+  <action name="cutAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/cut.png</normaloff>:/ico/image/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>剪切</string>
+   </property>
+  </action>
+  <action name="zoomInAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/zoomin.png</normaloff>:/ico/image/zoomin.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="zoomOutAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/zoomout.png</normaloff>:/ico/image/zoomout.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="undoAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/undo.png</normaloff>:/ico/image/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="doAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/redo.png</normaloff>:/ico/image/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>重做</string>
+   </property>
+  </action>
+  <action name="deleteFolderAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/delete_fileFolder (1).png</normaloff>:/ico/image/delete_fileFolder (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>删除文件夹</string>
+   </property>
+  </action>
+  <action name="deleteSubAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/delete_Sub (1).png</normaloff>:/ico/image/delete_Sub (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>删除订阅</string>
+   </property>
+  </action>
+  <action name="deleteToolBoxAction">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/ico/image/delete_filelist (1).png</normaloff>:/ico/image/delete_filelist (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>删除文章列表</string>
+   </property>
+  </action>
+  <action name="renameAction">
+   <property name="text">
+    <string>重命名</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header>qwebengineview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
